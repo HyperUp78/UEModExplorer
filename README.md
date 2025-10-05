@@ -48,16 +48,6 @@ Edit or inject UnrealScript subset in editor.
 Compile (shows function sizes).
 Apply Patch (choose in-place or new file).
 Re-open or run game to test.
-Example
-Source:
-
-
-function int GetPriority(){    return 5;}
-Emitted (conceptual) byte sequence (hex):
-
-
-1D 05 00 00 00 FF
-(Where 1D = IntConst token, 05 00 00 00 = value, FF = synthetic Return)
 
 Limitations
 No relocation for larger functions (real expansion) yet.
