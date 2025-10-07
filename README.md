@@ -5,6 +5,12 @@ Why it is not easy to do?
 A lot of commercial games powered by ue3 had modified low-level engine c++ laguage. None of all licensed sourced unreal buiilds had code of UnrealFrontend.exe. It is main GUI program used for compiling script and so on. This official Epic Games Compiler is not designed for "Native Functions" due to game specific modifications. The custom c# compiler is intended to convert that decompiled uc to bytecode. Finding the best matching Opcode for game recompile support is hard to do without leaked game sources.
 So I managed to do many random operation codes until some work for compiliation process. 
 
+<img width="366" height="413" alt="2025-10-07_13h14_33" src="https://github.com/user-attachments/assets/247b2e94-feb5-4a2c-9e15-fb382a97727b" />
+
+As you can see added selectable "experimental opcodes".  By default is comes with 10 different examples you can test with different games, it is possible to enable multiple opcodes so it check for best one so other are skipped.
+You can add and test your own written opcode in "UC C# COMPILER v6/config/opcodes.json" file then wire with UI here UE "Explorer/UnrealScript/ScriptCompiler.cs"  (reads UEEX_OPCODES env / applies policy)
+This upcoming feature gonna be released in 0.2 version of UEModExplorer fork.
+
 
 
 UnrealScript Mini Compiler (UE Explorer Extended)
