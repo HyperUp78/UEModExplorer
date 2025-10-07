@@ -1,7 +1,9 @@
 This is Forked source code from 1.60 version of UE Explorer owned and made by Eliot. 
-The main goal of this update is to bring custom unreal script compiler that is NOT violated with original UCC.exe by Epic Games and reversed.
+The main goal of this update is to bring custom unreal script compiler that is NOT violated with original UCC.exe/UnrealForntend.exe by Epic Games and reversed.
 
-
+Why it is not easy to do?
+A lot of commercial games powered by ue3 had modified low-level engine c++ laguage. None of all licensed sourced unreal buiilds had code of UnrealFrontend.exe. It is main GUI program used for compiling script and so on. This official Epic Games Compiler is not designed for "Native Functions" due to game specific modifications. The custom c# compiler is intended to convert that decompiled uc to bytecode. Finding the best matching Opcode for game recompile support is hard to do without leaked game sources.
+So I managed to do many random operation codes until some work for compiliation process. 
 
 
 
